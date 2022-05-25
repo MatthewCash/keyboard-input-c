@@ -1,0 +1,6 @@
+# Caches
+.ccls-cache
+
+# Compiled binaries
+bin/
+obj/

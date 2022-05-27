@@ -10,6 +10,16 @@ void handle_keycode(const unsigned short key_code)
     case KEY_SPACE: // toggle scene
         send_message("{\"setScene\":null}");
         break;
+    case KEY_LEFT:
+    case KEY_DOWN:
+        // scene off
+        send_message("{\"setScene\":\"off\"}");
+        break;
+    case KEY_RIGHT:
+    case KEY_UP:
+        // scene on
+        send_message("{\"setScene\":\"on\"}");
+        break;
 
     // Numpad 1-9 colors
     case KEY_KP1:

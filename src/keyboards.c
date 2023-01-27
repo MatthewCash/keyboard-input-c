@@ -63,7 +63,7 @@ int monitor_keyboards(const size_t keyboard_count, const char **keyboard_paths)
     struct input_event event;
 
     while (1) {
-        const int poll_result = poll(poll_fds, 1, -1);
+        const int poll_result = poll(poll_fds, keyboard_count, -1);
         if (poll_result < 0) {
             perror("An error occurred polling keyboard device");      
         }

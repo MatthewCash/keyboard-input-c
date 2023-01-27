@@ -20,7 +20,7 @@ int main()
     for (size_t i = 0; i < keyboard_count; i++) {
         printf("Loaded keyboard at [%s]\n", keyboard_paths[i]);
     }
-    
+
     monitor_keyboards(keyboard_count, (const char**) keyboard_paths);
 
     for (size_t i = 0; i < keyboard_count; i++) {
